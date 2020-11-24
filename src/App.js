@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import fishies from './fishies'
 import Scoreboard from './Scoreboard'
-import Card from './Card'
+import FishieCard from './Fishie'
 
 function App() {
   const [allFishies, setFishies] = useState(fishies);
@@ -10,7 +11,7 @@ function App() {
 
   //Make array of Card components first, then shuffles.
   function shuffleCards(array){
-      const cards = array.map((fish, index) => <Card handleClick={handleClick} index={index} key={fish.id} data={fish}/>);
+      const cards = array.map((fish, index) => <FishieCard handleClick={handleClick} index={index} key={fish.id} data={fish}/>);
       cards.sort(() => Math.random() - 0.5);
       return cards;
   }

@@ -1,5 +1,5 @@
 const fishies = [
-    {name: "Black Cat", id: 1, image: "./img/cat.jpg", clicked: false},
+    {name: "Black Cat", id: 1, image: "./img/cat.png", clicked: false},
     {name: "Dark Sleeper", id: 2, image: "./img/dark_sleeper.png", clicked: false},
     {name: "Deep Sea Angler", id: 3, image: "./img/deep_sea_angler.png", clicked: false},
     {name: "Electric Eel", id: 4, image: "./img/electric_eel.png", clicked: false},
